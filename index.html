@@ -47,22 +47,49 @@
 <html>
     <head>
         <title>Index</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|M+PLUS+Rounded+1c" rel="stylesheet">
         <style>
             body{
                 margin: 0;
-                display: table;
-                width: 100%;
             }
             .container{
+                display: flex;
                 height: 100vh;
-                width: 100%;
                 background-image: url("images.jpg");
                 background-size: cover;
-                display: table-row;
+                padding: 5em;
+            }
+            .blue {
+                color: blue
+            }
+            .menu {
+                float: right;
+                padding-bottom: 2em
+            }
+            .menu a {
+                color: black;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 1em;
+            }
+            .menu a:hover {
+                border: 2px solid transparent;
+                border-bottom-color: blue;
             }
             .left, .right {
-                display: table-cell;
-                width: 50%
+                width: 50%;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+            }
+            .left p  a{
+                font-size: 2.5em;
+            }
+            .logo {
+                font-family: 'Lobster', cursive;
+                font-size: 2em 
+            }
+            .image img {
+                width: 500px;
+                float: right
             }
         </style>
     </head>
@@ -70,12 +97,11 @@
         <div class="container">
             <div class="left">
                     <div class="logo">Ruqoyah</div>
-                    <p>Hello my name is ruqoyah</p>
-                    <p>I am a student at the cybercamp 2018. I love watching videos,playing games, reading and designing</p>
-                    <p>I also love watching films<a></a></p>
+                    <p>Hello my name is ruqoyah.</p>
+                    <p><span class="blue"> I'm</span> a student at the cybercamp 2018. I love <span class="blue">watching videos<span> ,playing games, reading and designing.</p>          <p>I also love watching films<a></a></p>
             </div>
             <div class="right">
-                <div class=="menu">
+                <div class="menu">
                     <a href="about">About</a>
                     <a href="skills">Skills</a>
                     <a href="portfolio">Portolio</a>
